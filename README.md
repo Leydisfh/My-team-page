@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://legacy.devchallenges.io/paths/responsive-web-developer/solutions">
       Solution
     </a>
     <span> | </span>
