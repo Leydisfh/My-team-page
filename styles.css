@@ -6,9 +6,74 @@
 a{
     text-decoration: none;
 }
+li{
+    list-style: none;
+}
 
 :root{
     --monse: 'Montserrat', sans-serif;
     --poppins: 'Poppins', sans-serif;
     --pt: 'PT Serif', serif;
+}
+
+.team_header{
+    display: flex;
+    margin: 20px 10px;
+}
+
+.team_header__title{
+    font-family: var(--pt);
+    font-weight: 700;
+    font-size: 36px;
+    color: #000;
+}
+
+.team_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 10px;
+    gap: 10px;
+}
+
+.team_container__texts{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.team_container__texts h3{
+font-family: var(--poppins);
+font-size: 18px;
+font-weight: 600;
+line-height: 27px;
+}
+
+.team_container__texts p{
+font-family: var(--poppins);
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+}
+
+/* Cards  */
+.team_container__cards{
+    width: 100%;
+}
+
+.team_container__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.member div{
+    display: flex;
+}
+
+
+img{
+    width: 160px;
 }

@@ -38,7 +38,11 @@ const teamContainer = document.querySelector('#team-container');
 
 team.forEach(member => {
     const memberDiv = document.createElement('li');
+    const memberClass =team.indexOf(member) 
+    memberDiv.classList.add('member'+ memberClass );
     memberDiv.classList.add('member');
+
+    const container = document.createElement('div');
 
     const memberImg = document.createElement('img');
     memberImg.src = member.img;
@@ -50,9 +54,10 @@ team.forEach(member => {
     const memberRole = document.createElement('p');
     memberRole.innerText = member.role;
 
-    memberDiv.appendChild(memberImg);
+    container.appendChild(memberImg);
+    container.appendChild(memberRole);
+    memberDiv.appendChild(container);
     memberDiv.appendChild(memberName);
-    memberDiv.appendChild(memberRole);
 
     teamContainer.appendChild(memberDiv);
 }   );
