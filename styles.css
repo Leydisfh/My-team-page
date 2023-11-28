@@ -38,6 +38,7 @@ li{
 
 .team_container__texts{
     display: flex;
+    margin-left: 10px;
     flex-direction: column;
     gap: 8px;
 
@@ -148,3 +149,5 @@ footer{
 footer a{
     color: #A9A9A9;
 }
+
+
